@@ -1,0 +1,16 @@
+/*Setting the html height to 100% will allow
+the h100 classes and vertical centering to work*/
+html{
+    height: 100%;
+}
+
+body{
+    background: url('/media/hannah-troupe-wL_w5t_OKtI-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    /*I used this height calc from the boutique ado project,
+    because it looks good and I wanted the same look for this project.*/
+    height: calc(100vh - 164px);
+    color: rgb(240, 240, 240);
+    font-family: 'Poppins', sans-serif;
+}
+
