@@ -1,0 +1,35 @@
+[
+    {
+       "pk": 1,
+       "model": "services.service",
+       "fields":{
+       "name": "Hobbyist Creator Package",
+       "price": 50,
+       "rating": 4.2,
+       "image_url": "https://images.pexels.com/photos/7676394/pexels-photo-7676394.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+       "image": "hobbyist_creator.jpg"
+        }
+    },
+    {
+       "pk": 2,
+       "model": "services.service",
+       "fields":{
+       "name": "Small Studio Package",
+       "price": 500,
+       "rating": 4.9,
+       "image_url": "https://images.pexels.com/photos/690779/pexels-photo-690779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+       "image": "small_studio.jpg"
+        }
+    },
+    {
+       "pk": 3,
+       "model": "services.service",
+       "fields":{
+       "name": "Professional Studio Package",
+       "price": 2000,
+       "rating": 4.5,
+       "image_url": "https://images.pexels.com/photos/134469/pexels-photo-134469.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+       "image": "pro_studio.jpg"
+        }
+    },
+]
