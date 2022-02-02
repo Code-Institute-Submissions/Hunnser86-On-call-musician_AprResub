@@ -1,10 +1,14 @@
 [
     {
        "pk": 1,
-       "model": "services.service",
+       "model": "services.Service",
        "fields":{
        "name": "Hobbyist Creator Package",
+       "description": "A package for hobbyist creators, whether you are a YouTuber, podcaster or hobbyist creator of any media that needs music, this is the package for you ",
        "price": 50,
+       "frequency": "monthly",
+       "access": "Two songs a month from the music library",
+       "original_music": "One original piece per year",
        "rating": 4.2,
        "image_url": "https://images.pexels.com/photos/7676394/pexels-photo-7676394.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
        "image": "hobbyist_creator.jpg"
@@ -12,10 +16,14 @@
     },
     {
        "pk": 2,
-       "model": "services.service",
+       "model": "services.Service",
        "fields":{
        "name": "Small Studio Package",
+       "description": "Are you a small studio business?  With this fully comprehensive package, you will be sure to save time and money, and be able to focus on the more difficult aspects of your business.",
        "price": 500,
+       "frequency": "monthly",
+       "access": "Full access to the music library",
+       "original_music": "Six original pieces per year",
        "rating": 4.9,
        "image_url": "https://images.pexels.com/photos/690779/pexels-photo-690779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
        "image": "small_studio.jpg"
@@ -23,13 +31,17 @@
     },
     {
        "pk": 3,
-       "model": "services.service",
+       "model": "services.Service",
        "fields":{
        "name": "Professional Studio Package",
+       "description": "This package is for fully professional, broadcast, TV or film studios.  Not only will you have full access to the music library, but you are guarenteed a complete unique music package at your request.",
        "price": 2000,
+       "frequency": "monthly",
+       "access": "Full access to the music library",
+       "original_music": "Unlimited access to original music packages throughout the year",
        "rating": 4.5,
        "image_url": "https://images.pexels.com/photos/134469/pexels-photo-134469.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
        "image": "pro_studio.jpg"
         }
-    },
+    }
 ]
