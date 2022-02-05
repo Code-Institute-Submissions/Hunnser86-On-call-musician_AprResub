@@ -6,7 +6,7 @@ from .models import Service
 
 
 def all_services(request):
-    """ A view to show all products"""
+    """ A view to show all services"""
 
     services = Service.objects.all()
 
