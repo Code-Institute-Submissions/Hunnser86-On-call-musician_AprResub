@@ -57,8 +57,13 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item dropdown">
                     <a class="nav-link" href="{% url 'services' %}">Services</a>
+                    <div class="dropdown-menu border-0">
+                        <a href="{% url 'services' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                        <a href="{% url 'services' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
+                        <a href="{% url 'services' %}" class="dropdown-item">All Services</a>
+                    </div>
                 </li>
 
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -84,7 +89,7 @@
                         </li>
                         <li list-inline-item>
                             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-                                href="">
+                                href="{% url 'view_cart' %}">
                                 <div class="text-center">
                                     <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                                     <p class="my-0">
