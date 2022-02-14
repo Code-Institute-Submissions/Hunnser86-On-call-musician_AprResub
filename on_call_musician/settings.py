@@ -78,6 +78,10 @@ TEMPLATES = [
     },
 ]
 
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
+
 """
 Authentication backends copied from the Django
 Docs
