@@ -14,6 +14,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 .navbar{
     background: #29A9B3;
 }
@@ -35,7 +37,13 @@ body{
 
 .cart-price{
     margin-top: 15px;
+    margin-left: 5px;
 }
+
+.fa-shopping-cart{
+    margin-left: 0;
+}
+
 
 /* from Bulma */
 .icon {
@@ -45,6 +53,7 @@ body{
     height: 1.5rem;
     width: 1.5rem;
 }
+
 
 .logo-font {
     text-transform: uppercase;
@@ -109,6 +118,10 @@ body{
     position: fixed;
     bottom: 10px;
     right: 10px;
+}
+
+.fas-chevron-left{
+    color: #f8f9fa;
 }
 
 
