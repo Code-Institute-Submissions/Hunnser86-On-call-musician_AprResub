@@ -10,10 +10,32 @@ body{
     background-size: cover;
     /*I used this height calc from the boutique ado project,
     because it looks good and I wanted the same look for this project.*/
-    color: rgb(247, 16, 16);
+    color: rgb(250, 250, 250);
     font-family: 'Poppins', sans-serif;
 }
 
+.navbar{
+    background: #29A9B3;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 750px;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.cart-price{
+    margin-top: 15px;
+}
 
 /* from Bulma */
 .icon {
@@ -32,39 +54,53 @@ body{
     width: fit-content;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
+.header-container{
+    margin-top: 100px;
+}
+
+.view-packages-button {
+    background: rgb(255, 255, 255);
+    color: rgb(1, 9, 82);
     min-width: 260px;
+    border-radius: 50px;
 }
 
-.btn-black {
-    background: black;
-    color: white;
+.btn-blue {
+    background: rgb(83, 244, 255);
+    color: black;
 }
 
-.btn-outline-black{
+.btn-outline-blue{
     background: white;
     color: black !important;
-    border: 1px solid black;
+    border: 1px solid rgb(1, 9, 82);
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
+.remove-item{
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.view-packages-button-button:hover,
+.view-packages-button-button:active,
+.view-packages-button-button:focus,
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus {
+    background: rgb(1, 9, 82);
     color: white;
 }
 
-.text-black {
-    color: #000 !important;
+.text-white {
+    color: rgb(255, 255, 255) !important;
 }
 
-.border-black {
-    border: 1px solid black !important;
+.my-0{
+    color: #c5c8ca;
+}
+
+.border-blue {
+    border: 1px solid rgb(1, 9, 82) !important;
 }
 
 .btt-button {
@@ -74,6 +110,7 @@ body{
     bottom: 10px;
     right: 10px;
 }
+
 
 .btt-link,
 .update-link,
