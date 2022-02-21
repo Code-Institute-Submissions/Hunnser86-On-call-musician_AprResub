@@ -14,11 +14,22 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+h1{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.h-rule{
+    border: 1px solid white;
+}
 
 
 .navbar{
-    background: #29A9B3;
+    background: rgb(1, 9, 82);
+    max-width: 100%;
 }
+
 
 .navbar-nav{
     display: flex;
@@ -75,14 +86,45 @@ body{
 }
 
 .btn-blue {
-    background: rgb(83, 244, 255);
-    color: black;
+    background: rgb(1, 9, 82);
+    color: white;
 }
 
 .btn-outline-blue{
     background: white;
     color: black !important;
     border: 1px solid rgb(1, 9, 82);
+}
+
+.btn-outline-blue:hover{
+    background: #17a2b8;
+    color: rgb(1, 9, 82);
+}
+
+/* Services page */
+
+.card-body{
+    background: rgb(1, 9, 82);
+    max-height: 300px;
+}
+
+
+.card-footer{
+    background: rgb(1, 9, 82);
+}
+
+/*service detail page*/
+
+.image-container{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+
+.service-details-container{
+    position: absolute;
+    left: 60%;
+    top: 1%;
 }
 
 .remove-item{
@@ -96,8 +138,8 @@ body{
 .btn-blue:hover,
 .btn-blue:active,
 .btn-blue:focus {
-    background: rgb(1, 9, 82);
-    color: white;
+    background: #17a2b8;
+    color: rgb(1, 9, 82);
 }
 
 .text-white {
