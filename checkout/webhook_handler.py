@@ -22,9 +22,9 @@ class StripeWH_Handler:
                 'checkout/confirmation_emails/confirmation_email_subject.txt',
                 {'order': order})
             body = render_to_string(
-                'checkout/confirmation_emails/confirmation_email_body.txt',
+                'checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt',
                 {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
             send_mail(
                 subject,
                 body,
@@ -122,7 +122,7 @@ class StripeWH_Handler:
                 return HttpResponse(
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500)
-        self._send_confirmation_email(order)            
+        self._send_confirmation_email(order)
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
             status=200)
