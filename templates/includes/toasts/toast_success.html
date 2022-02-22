@@ -30,16 +30,6 @@
                 {% endfor %}
             </div>
             <div class="row">
-                <div class="col">
-                    <strong><p class="mt-3 mb-1 text-black">
-                        Total{% if discount_delta > 0 %} (Exc. discount){% endif %}: 
-                        <span class="float-right">${{ total|floatformat:2 }}</span>
-                    </p></strong>
-                    {% if discount_delta > 0 %}
-                        <p class="mb-0 p-2 bg-warning shadow-sm text-black text-center">
-                            Add <strong>${{ discount_delta }}</strong> to get a 10% discount!
-                        </p>
-                    {% endif %}
                     <a href="{% url 'view_cart' %}" class="btn btn-black btn-block rounded-0">
                         <span class="text-uppercase">Go To Secure Checkout</span>
                         <span class="icon">
