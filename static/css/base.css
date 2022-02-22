@@ -180,6 +180,10 @@ h1{
     z-index: 9999999999999;
 }
 
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
 
 /* -------------------------------- Boostrap toasts */
 .custom-toast{
