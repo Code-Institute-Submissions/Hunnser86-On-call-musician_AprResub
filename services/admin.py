@@ -15,7 +15,6 @@ class ServiceAdmin(admin.ModelAdmin):
         'name',
         'description',
         'price',
-        'frequency',
         'access',
         'original_music',
         'rating',

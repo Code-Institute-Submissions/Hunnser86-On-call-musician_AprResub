@@ -11,7 +11,6 @@ class Service(models.Model):
     name = models.CharField(max_length=254)
     description = models.TextField(max_length=400)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    frequency = models.CharField(max_length=254)
     access = models.CharField(max_length=254, default='Access')
     original_music = models.CharField(max_length=254, default='Original Music')
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True,
