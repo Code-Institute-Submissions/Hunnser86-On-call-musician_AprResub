@@ -41,6 +41,7 @@ def add_service(request):
             messages.error(request, 'Failed to add service. Please ensure the form is valid.')
     else:
         form = ServiceForm()
+        
     template = 'services/add_service.html'
     context = {
         'form': form,
