@@ -1,1 +1,1 @@
-web: gunicorn on-call-musician.wsgi:application
+web: gunicorn on_call_musician.wsgi:application
