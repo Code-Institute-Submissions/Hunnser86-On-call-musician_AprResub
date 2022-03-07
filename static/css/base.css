@@ -6,7 +6,7 @@ html{
 }
 
 body{
-    background: url('https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/') no-repeat center center fixed;
+    background: url('{{ MEDIA_URL }}') no-repeat center center fixed;
     background-size: cover;
     /*I used this height calc from the boutique ado project,
     because it looks good and I wanted the same look for this project.*/
