@@ -21,13 +21,19 @@ h1{
 }
 
 .h-rule{
-    border: 1px solid white;
+    border: 1px solid #17a2b8;
 }
 
 
 .navbar{
     background: rgb(1, 9, 82);
     max-width: 100%;
+}
+
+.navbar-collapse .show{
+    display: flex;
+    align-items: center;
+    
 }
 
 
@@ -106,6 +112,10 @@ h1{
 .card-body{
     background: rgb(1, 9, 82);
     max-height: 300px;
+}
+
+.card-img-top{
+    height: 300px;
 }
 
 
