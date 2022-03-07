@@ -6,7 +6,7 @@ html{
 }
 
 body{
-    background: url('/media/hannah-troupe-wL_w5t_OKtI-unsplash.jpg') no-repeat center center fixed;
+    background: url('{{ MEDIA_URL }}}hannah-troupe-wL_w5t_OKtI-unsplash.jpg') no-repeat center center fixed;
     background-size: cover;
     /*I used this height calc from the boutique ado project,
     because it looks good and I wanted the same look for this project.*/
