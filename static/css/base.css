@@ -14,6 +14,16 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background-image: url(/media/pexels-gradienta-6985260.jpg);
+	z-index: -1;
+}
+
 h1{
     margin-top: 10px;
     text-align: center;
