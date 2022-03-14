@@ -82,7 +82,6 @@
                     {% endif %}
 
                         {% if request.user.is_authenticated %}
-                        {% if request.user.is_superuser %}
                         <i class="fas fa-user fa-lg text-white"></i>
                         <li class="list-inline-item dropdown">
                        
@@ -91,11 +90,11 @@
                             My Account
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            {% if request.user.is_superuser %}
                             <a href="{% url 'add_service' %}" class="dropdown-item">Product Management</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                            {% else %}
 
                             {% endif %}
                         </div>
