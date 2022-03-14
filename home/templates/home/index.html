@@ -15,9 +15,17 @@
                 to a library of music, and commission unique music 
                 tailored to your own projects.
             </h4>
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
             <div class="my-5">
                 <a href="{% url 'services' %}" class="view-packages-button btn btn-blue btn-lg rounded-0 text-uppercase py-3">View Services</a>
-            </div>    
+            </div>
+            {% endif %} 
+            {% else %}
+            <div class="my-5">
+                <a href="{% url 'account_signup' %}" class="view-packages-button btn btn-blue btn-lg rounded-0 text-uppercase py-3">Register Now</a>
+            </div> 
+            {% endif %}
         </div>
     </div>
 </div>
