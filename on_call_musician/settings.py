@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'profiles',
     'storages',
     'music_library',
+    'service_demo',
 ]
 
 MIDDLEWARE = [

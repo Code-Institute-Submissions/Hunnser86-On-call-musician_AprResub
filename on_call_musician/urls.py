@@ -23,10 +23,12 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),
     path('services/', include('services.urls')),
+    path('service_demo/', include('service_demo.urls')),
     path('cart/', include('cart.urls')),
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
     path('music_library/', include('music_library.urls')),
+
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

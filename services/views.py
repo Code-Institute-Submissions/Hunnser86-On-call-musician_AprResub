@@ -18,6 +18,7 @@ def all_services(request):
     return render(request, 'services/services.html', context)
 
 
+
 def service_detail(request, service_id):
     """ A view to show individual services"""
 

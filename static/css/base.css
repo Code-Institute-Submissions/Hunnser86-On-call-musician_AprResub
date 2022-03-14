@@ -31,6 +31,12 @@ h1{
     font-weight: bolder;
 }
 
+h2{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
 .h-rule{
     border: 1px solid #17a2b8;
 }
@@ -101,6 +107,16 @@ h1{
     min-width: 260px;
     border-radius: 50px;
 }
+
+.register-now-button{
+    background: rgb(255, 255, 255);
+    color: rgb(1, 9, 82);
+    min-width: 260px;
+    border-radius: 50px;
+    position: relative;
+    left: 43%;
+}
+
 
 .btn-blue {
     background: rgb(1, 9, 82);
