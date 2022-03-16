@@ -16,7 +16,7 @@
             <div class="col-12 col-md-6">
                 <hr class="h-rule">
                 <h2 class="logo-font mb-4">Service Management</h2>
-                <h5 class="text-muted">Add a Service</h5>
+                <h5 class="text-white">Add a Service</h5>
                 <hr class="h-rule">
             </div>
         </div>
@@ -33,8 +33,8 @@
                         {% endif %}
                     {% endfor %}
                     <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'services' %}">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Add Service</button>
+                        <a class="btn btn-outline-black rounded-0 text-warning" href="{% url 'services' %}">Cancel</a>
+                        <button class="btn btn-black rounded-0 text-warning" type="submit">Add Service</button>
                     </div>
                 </form>
             </div>            

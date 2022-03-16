@@ -34,7 +34,7 @@
             <p class="mb-0">{{ service.description }}</p>
             {% if request.user.is_superuser %}
             <small class="ml-3">
-                    <a href="{% url 'edit_service' service.id %}">Edit</a> |
+                    <a href="{% url 'edit_service' service.id %}" class="text-warning">Edit</a> |
                     <a href="{% url 'delete_service' service.id %}" class="text-danger">Delete</a>
             </small>
             {% endif %}
