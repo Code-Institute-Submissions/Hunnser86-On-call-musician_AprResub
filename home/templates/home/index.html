@@ -4,10 +4,10 @@
 
 {% block content %}
 
-<div class="container header-container h-100">
-    <div class="row h-100">
+<div class="container header-container">
+    <div class="row d-flex justify-content-center">
         <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 ">
+            <h1 class="display-4">
                 Music On Demand
             </h1>
             <h4>
@@ -16,13 +16,12 @@
                 tailored to your own projects.
             </h4>
             {% if request.user.is_authenticated %}
-            {% if request.user.is_superuser %}
-            <div class="my-5">
+            <div class="my-5 d-flex justify-content-center">
                 <a href="{% url 'services' %}" class="view-packages-button btn btn-blue btn-lg rounded-0 text-uppercase py-3">View Services</a>
             </div>
-            {% endif %} 
+
             {% else %}
-            <div class="my-5">
+            <div class="my-5 d-flex justify-content-center">
                 <a href="{% url 'account_signup' %}" class="view-packages-button btn btn-blue btn-lg rounded-0 text-uppercase py-3">Register Now</a>
             </div> 
             {% endif %}

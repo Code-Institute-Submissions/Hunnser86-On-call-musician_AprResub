@@ -27,11 +27,18 @@ body{
 
 h1{
     margin-top: 10px;
+    margin-bottom: 20px;
     text-align: center;
     font-weight: bolder;
 }
 
 h6{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h4{
     margin-top: 10px;
     text-align: center;
     font-weight: bolder;
@@ -97,9 +104,7 @@ h6{
     width: fit-content;
 }
 
-.header-container{
-    margin-bottom: 100px;
-}
+
 
 .view-packages-button {
     background: rgb(255, 255, 255);
@@ -156,6 +161,11 @@ h6{
     position: absolute;
     right: 10%;
     top: 30%;
+}
+
+.detail-img{
+    min-width: 100%;
+    max-width: 500px;
 }
 
 .service-details-container{
@@ -219,6 +229,16 @@ h6{
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+/*----------------------------------checkout success*/
+.order-confirmation-wrapper{
+    position: relative;
+    left: 37%;    
+}
+
+.checkout-container{
+    margin-top: 0;
 }
 
 

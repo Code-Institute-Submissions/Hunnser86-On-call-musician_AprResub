@@ -9,11 +9,11 @@
         <div class=" my-5">
             {% if service.image %}
             <a href="{{ service.image.url }}" target="_blank">
-                <img class="card-img-top img-fluid" src="{{ service.image.url }}" alt="{{ service.name }}">
+                <img class="detail-img" src="{{ service.image.url }}" alt="{{ service.name }}">
             </a>
             {% else %}
             <a href="">
-                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}">
+                <img class="detail-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}">
             </a>
             {% endif %}
         </div>
