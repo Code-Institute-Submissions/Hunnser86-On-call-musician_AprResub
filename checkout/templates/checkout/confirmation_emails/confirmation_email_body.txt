@@ -17,6 +17,9 @@ If you have any questions, feel free to contact us at {{ contact_email }}.
 
 Thank you for subscribing!
 
+To start a custom music order, please email us with all the project details at {{ contact_email }}.
+
+
 Sincerely,
 
 The On Call Musician
