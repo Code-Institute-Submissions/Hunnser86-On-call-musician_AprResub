@@ -450,7 +450,7 @@ input[name='q']::placeholder {
       align-items: center;
       justify-content: center;
   }
-
+/* service page*/
     .card {
       min-width: 100%;
       margin-left: 0;
@@ -474,6 +474,10 @@ input[name='q']::placeholder {
         
         left: 15px;
     }
+
+/*service detail page*/
+
+
 }
 
 
