@@ -84,7 +84,7 @@
                         {% if request.user.is_authenticated %}
                         <i class="fas fa-user fa-lg text-white"></i>
                         <li class="list-inline-item dropdown">
-                       
+                        
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             My Account
@@ -101,14 +101,14 @@
                         </li>
 
                     {% if request.user.is_authenticated %}
-                    <li list-inline-item>
-
+                    <li class="list-inline-item dropdown">
+                        <i class="fas fa-shopping-cart fa-lg text-white "></i>
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_cart' %}">
-                            <i class="fas fa-shopping-cart fa-lg text-white "></i>
+                            
                         
                         
-                            <p class="text-white cart-price">
+                            <p class="text-white cart-price " id="navbarDropdownMenuLink">
                                 {% if grand_total %}
                                 £{{ grand_total|floatformat:2 }}
                                 {% else %}

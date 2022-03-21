@@ -60,20 +60,25 @@ h4{
     
 }
 
-
-.navbar-nav{
+#navbarDropdownMenuLink{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-left: 750px;
+    justify-content: center;
 }
 
-.nav-link{
+.list-inline-item i{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    margin-right: 20px;
+    padding-top: 3px;
+}
+
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .cart-price{
@@ -140,6 +145,8 @@ h4{
 }
 
 /* Services page */
+
+
 
 .card-body{
     background: rgb(1, 9, 82);
@@ -339,6 +346,8 @@ input[name='q']::placeholder {
   .container {
     max-width: 80%;
   }
+
+
 }
 
 /* fixed top navbar only on medium and up */
@@ -354,6 +363,11 @@ input[name='q']::placeholder {
     .header-container {
         padding-top: 164px;
     }
+    .fa-user{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -396,6 +410,73 @@ input[name='q']::placeholder {
     }
 
 }
+
+/*on small screens*/
+
+@media (max-width: 320px){
+     h1{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         
+     }
+
+     h4{
+        text-align: center;
+        font-size: smaller;
+     }
+     
+     .nav-item.active{
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+     }
+
+     .dropdown .show{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    } 
+
+    .list-inline-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .fa-user{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+    .card {
+      min-width: 100%;
+      margin-left: 0;
+      padding: 0;
+      
+  }
+
+    .card-footer{
+      padding-bottom: 130px;
+  }
+
+    .card-img-top{
+      height: 150px;
+}
+    .service-container{
+        margin-bottom: 50px;
+    }
+    
+    .register-now-button{
+        margin: 0;
+        
+        left: 15px;
+    }
+}
+
+
 
 /* Allauth form formatting */
 
