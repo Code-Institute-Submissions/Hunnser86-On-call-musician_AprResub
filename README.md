@@ -1,7 +1,17 @@
 # The On Call Musician
 
 ### Milestone Project Four
-This is my website
+Over the past few years, it has become necessary for businesses to become more digital when it comes to not only marketing, but 
+in content too.  Companies are having to re-brand at least once a year to keep up with the ever changing lanscape, and find more creative ways to be seen by the public,
+including, video content and podcasting.
+
+Music is a massive part of this.  Why trawl around trying to find someone every year to write a new jingle or backing music?  This is time consuming and very
+expensive.
+
+I have developed The On Call Musician for just this purpose!
+
+It is a simple lifetime subscription service, which allows anyone, from hobbyist to film and TV studios, to have access to their own personal musician and original music,
+when they need it, without the hassle.
 
 ## Demo
 The live site can be viewed here - [The Hop Shop](https://hop-shop.herokuapp.com/).
