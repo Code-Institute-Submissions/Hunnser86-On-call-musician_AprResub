@@ -14,11 +14,11 @@ It is a simple lifetime subscription service, which allows anyone, from hobbyist
 when they need it, without the hassle.
 
 ## Demo
-The live site can be viewed here - [The Hop Shop](https://hop-shop.herokuapp.com/).
+The live site can be viewed here - [The On Call Musician](https://on-call-musician.herokuapp.com/).
 
-GitHub repository can be viewed here - [mitchdavenport88/hop_shop](https://github.com/mitchdavenport88/hop_shop).
+GitHub repository can be viewed here - [Hunnser86/On-call-musician](https://github.com/Hunnser86/On-call-musician).
 
-![Site Mockup](readme-docs/screenshots/am-i-responsive2.jpg)
+![Site Mockup](media/site-mockup.png)
 
 ## UX
 ### Strategy
