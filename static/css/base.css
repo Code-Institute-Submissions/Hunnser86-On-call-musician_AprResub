@@ -54,17 +54,17 @@ h4{
     max-width: 100%;
 }
 
+.navbar-nav{
+
+}
+
 .navbar-collapse .show{
     display: flex;
     align-items: center;
     
 }
 
-#navbarDropdownMenuLink{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .list-inline-item i{
     display: flex;
@@ -370,12 +370,8 @@ input[name='q']::placeholder {
       }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
 
+@media (max-width: 991px) {
     body {
         height: calc(100vh - 116px);
     }
@@ -426,11 +422,7 @@ input[name='q']::placeholder {
         font-size: smaller;
      }
      
-     .nav-item.active{
-          display: flex;
-          align-items: flex-start;
-          justify-content: center;
-     }
+
 
      .dropdown .show{
         display: block;
@@ -439,17 +431,13 @@ input[name='q']::placeholder {
         flex-direction: column;
     } 
 
-    .list-inline-item{
+    .fa-shopping-cart{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        align-items: left;
+
+
     }
-    .fa-user{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
+
 /* service page*/
     .card {
       min-width: 100%;
@@ -475,11 +463,16 @@ input[name='q']::placeholder {
         left: 15px;
     }
 
-/*service detail page*/
+@media (max-width: 375px){
+
+#navbarDropdownMenuLink{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
 
 
 }
-
 
 
 /* Allauth form formatting */
