@@ -52,13 +52,11 @@ h4{
 .navbar{
     background: rgb(1, 9, 82);
     max-width: 100%;
-}
-
-.navbar-nav{
 
 }
 
-.navbar-collapse .show{
+
+.navbar-collapse{
     display: flex;
     align-items: center;
     
@@ -81,14 +79,9 @@ h4{
     flex-direction: column;
 }
 
-.cart-price{
-    margin-top: 15px;
-    margin-left: 5px;
-}
 
-.fa-shopping-cart{
-    margin-left: 0;
-}
+
+
 
 
 /* from Bulma */
@@ -368,6 +361,33 @@ input[name='q']::placeholder {
         align-items: center;
         justify-content: center;
       }
+
+    .fa-shopping-cart{
+                display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+/*service page*/
+
+.card {
+    min-width: 100%;
+    margin-left: 0;
+    padding: 0;
+    
+}
+
+  .card-footer{
+    padding-bottom: 130px;
+}
+
+  .card-img-top{
+    height: 15em;
+}
+  .service-container{
+      margin-bottom: 50px;
+  }
+
 }
 
 
@@ -405,6 +425,26 @@ input[name='q']::placeholder {
         font-size: .75rem;
     }
 
+/*Service page*/
+
+.card {
+    min-width: 100%;
+    margin-left: 0;
+    padding: 0;
+    
+}
+
+  .card-footer{
+    padding-bottom: 130px;
+}
+
+  .card-img-top{
+    height: 15em;
+}
+  .service-container{
+      margin-bottom: 50px;
+  }
+
 }
 
 /*on small screens*/
@@ -431,12 +471,6 @@ input[name='q']::placeholder {
         flex-direction: column;
     } 
 
-    .fa-shopping-cart{
-        display: flex;
-        align-items: left;
-
-
-    }
 
 /* service page*/
     .card {
@@ -463,16 +497,7 @@ input[name='q']::placeholder {
         left: 15px;
     }
 
-@media (max-width: 375px){
 
-#navbarDropdownMenuLink{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-
-
-}
 
 
 /* Allauth form formatting */

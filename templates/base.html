@@ -101,8 +101,9 @@
                         </li>
 
                     {% if request.user.is_authenticated %}
+                    <i class="fas fa-shopping-cart fa-lg text-white "></i>
                     <li class="list-inline-item dropdown">
-                        <i class="fas fa-shopping-cart fa-lg text-white "></i>
+                        
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_cart' %}">
                             
