@@ -388,6 +388,18 @@ input[name='q']::placeholder {
       margin-bottom: 50px;
   }
 
+  .image-container{
+    position: absolute;
+    top: 25%;
+
+}
+
+.service-details-container{
+    position: absolute;
+    top: 20%;
+
+}
+
 }
 
 
@@ -445,6 +457,42 @@ input[name='q']::placeholder {
       margin-bottom: 50px;
   }
 
+  /*Service detail page*/
+
+.image-container{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+
+.service-details-container{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+
+    text-align: center;
+}
+
+  
+
+}
+
+@media (max-width: 425px){
+    /*Service detail page*/
+
+.image-container{
+    position: absolute;
+    top: 10%;
+    left: 2.5%;
+}
+
+.service-details-container{
+    position: absolute;
+    top: 42%;
+    left: auto;
+    text-align: center;
+}
+
 }
 
 /*on small screens*/
@@ -496,6 +544,24 @@ input[name='q']::placeholder {
         
         left: 15px;
     }
+/*Service detail page*/
+
+.image-container{
+    position: absolute;
+    top: 10%;
+    left: 2.5%;
+}
+
+.service-details-container{
+    position: absolute;
+    top: 35%;
+    left: auto;
+    text-align: center;
+}
+
+
+
+}
 
 
 

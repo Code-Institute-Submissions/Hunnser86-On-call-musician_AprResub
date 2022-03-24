@@ -18,37 +18,39 @@
             {% endif %}
         </div>
     </div>
-    <div class="service-details-container col-12 col-md-6 col-lg-4 col-sm-12">
-        <div class=" mb-5 mt-md-5">
-            <p class="mb-0">{{ service.name }}</p><br>
-            <p class="lead mb-0 text-left font-weight-bold">£{{ service.price }}</p><br>
-            <p class="lead mb-0 text-left font-weight-bold">A lifetime {{ service.subscription }}</p><br>
-            <p class="lead mb-0 text-left font-weight-bold">{{ service.access }}</p><br>
-            <p class="lead mb-0 text-left font-weight-bold">{{ service.original_music }}</p><br>
-            {% if service.rating %}
-            <p>Rating</p>
-            <small class="text-white"><i class="fas fa-star mr-1"></i>{{ service.rating }} / 5</small><br>
-            {% else %}
-            <small class="text-white">No Rating</small>
-            {% endif %}<br>
-            <p class="mb-0">{{ service.description }}</p>
-            {% if request.user.is_superuser %}
-            <small class="ml-3">
-                    <a href="{% url 'edit_service' service.id %}" class="text-warning">Edit</a> |
-                    <a href="{% url 'delete_service' service.id %}" class="text-danger">Delete</a>
-            </small>
-            {% endif %}
-            <div class="col-12">
-                <form class="form" action="{% url 'add_to_cart' service.id %}" method="POST">
-                    {% csrf_token %}
-                    <div class="form-row">
-                        <div class="col-12">
-                            <div class="form-group w-50">
-                                <div class="input-group ">
-                                    <input class="form-control qty_input " type="hidden" name="quantity" value="1" min="1" max="1" data-item_id="{{ service.id }}" id="id_qty_{{ service.id }}">
-                                </div>
+</div>
+<div class="service-details-container col-12 col-md-6 col-lg-4 col-sm-12">
+    <div class=" mb-5 mt-md-5">
+        <p class="mb-0">{{ service.name }}</p><br>
+        <p class="lead mb-0 text-left font-weight-bold">£{{ service.price }}</p><br>
+        <p class="lead mb-0 text-left font-weight-bold">A lifetime {{ service.subscription }}</p><br>
+        <p class="lead mb-0 text-left font-weight-bold">{{ service.access }}</p><br>
+        <p class="lead mb-0 text-left font-weight-bold">{{ service.original_music }}</p><br>
+        {% if service.rating %}
+        <p>Rating</p>
+        <small class="text-white"><i class="fas fa-star mr-1"></i>{{ service.rating }} / 5</small><br>
+        {% else %}
+        <small class="text-white">No Rating</small>
+        {% endif %}<br>
+        <p class="mb-0">{{ service.description }}</p>
+        {% if request.user.is_superuser %}
+        <small class="ml-3">
+            <a href="{% url 'edit_service' service.id %}" class="text-warning">Edit</a> |
+            <a href="{% url 'delete_service' service.id %}" class="text-danger">Delete</a>
+        </small>
+        {% endif %}
+        <div class="col-12">
+            <form class="form" action="{% url 'add_to_cart' service.id %}" method="POST">
+                {% csrf_token %}
+                <div class="form-row">
+                    <div class="col-12">
+                        <div class="form-group w-50">
+                            <div class="input-group ">
+                                <input class="form-control qty_input " type="hidden" name="quantity" value="1" min="1"
+                                    max="1" data-item_id="{{ service.id }}" id="id_qty_{{ service.id }}">
                             </div>
                         </div>
+                    </div>
 
                     <div class="col-12">
                         <a href="{% url 'services' %}" class="btn btn-blue rounded-0 mt-5">
@@ -57,19 +59,20 @@
                             </span>
                             <span class="text-uppercase">Keep Shopping</span>
                         </a>
-                        <input type="submit" class="btn btn-outline-blue rounded-0 text-uppercase mt-5" value="Add to Cart">
+                        <input type="submit" class="btn btn-outline-blue rounded-0 text-uppercase mt-5"
+                            value="Add to Cart">
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 </div>
             </form>
         </div>
     </div>
-</div>
 
 
-{% endblock %}
 
-{% block postloadjs %}
-{{ block.super }}
-{% include 'services/includes/quantity-input-script.html' %}
-{% endblock %}
+    {% endblock %}
+
+    {% block postloadjs %}
+    {{ block.super }}
+    {% include 'services/includes/quantity-input-script.html' %}
+    {% endblock %}
