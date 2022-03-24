@@ -11,8 +11,8 @@
             <hr class="w-50 mb-1 h-rule">
             <h6>Please browse below at our services.</h6>
             <h6>To make a purchase, simply register an account</h6>
-        <div class="my-5 ">
-                    <a href="{% url 'account_signup' %}" class="register-now-button btn btn-blue btn-lg rounded-0 text-uppercase py-3">Register Now</a>
+        <div class="my-5 register-div">
+                    <a href="{% url 'account_signup' %}" class="register-now-button btn btn-blue btn-lg rounded-0 text-uppercase py-3 ">Register Now</a>
         </div>              
         </div>
 
@@ -27,9 +27,9 @@
                       <div class="col-sm-6 col-md-6 col-lg-4">
                         <div class="card h-100 border-0">
                             {% if service.image %}
-                                <img class="card-img-top img-fluid" src="{{ service.image.url }}" alt="{{ service.name }}">
+                                <img class="card-img-top demo-img img-fluid" src="{{ service.image.url }}" alt="{{ service.name }}">
                             {% else %}
-                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}">                            
+                                <img class="card-img-top demo-img img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}">                            
                             {% endif %}
                             <div class="card-body pb-0">
                                 <p class="mb-0">{{ service.name }}</p>
@@ -60,22 +60,22 @@
 
                       {% if forloop.counter|divisibleby:1 %}
                       <div class="col-12 d-sm-none mb-5">
-                          <hr>
+                          <hr class="h-rule">
                       </div>
                   {% endif %}                        
                   {% if forloop.counter|divisibleby:2 %}
                       <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                          <hr>
+                          <hr class="h-rule">
                       </div>
                   {% endif %}
                   {% if forloop.counter|divisibleby:3 %}
                       <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                          <hr>
+                          <hr class="h-rule">
                       </div>
                   {% endif %}
                   {% if forloop.counter|divisibleby:4 %}
                       <div class="col-12 d-none d-xl-block mb-5">
-                          <hr>
+                          <hr class="h-rule">
                       </div>
                   {% endif %}
                   {% endfor %}

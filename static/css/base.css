@@ -155,6 +155,10 @@ h4{
     background: rgb(1, 9, 82);
 }
 
+/*service demo page*/
+
+
+
 /*service detail page*/
 
 .image-container{
@@ -457,6 +461,10 @@ input[name='q']::placeholder {
       margin-bottom: 50px;
   }
 
+/*service demo page*/
+
+
+
   /*Service detail page*/
 
 .image-container{
@@ -502,6 +510,38 @@ input[name='q']::placeholder {
     text-align: center;
 }
 
+ 
+
+}
+
+
+@media (min-width: 375px){
+    /* service-demo page*/
+/*.card {
+    min-width: 100%;
+    margin-left: 0;
+    padding: 0;
+    
+}
+
+  .card-footer{
+    padding-bottom: 130px;
+}
+
+  .card-img-top{
+    height: 150px;
+}
+  .service-container{
+      margin-bottom: 50px;
+  }
+  
+  .register-div{
+      position: relative;
+      margin: auto;
+      left: -10%;
+      
+
+  }*/
 }
 
 /*on small screens*/
@@ -553,6 +593,32 @@ input[name='q']::placeholder {
         
         left: 15px;
     }
+
+/* service-demo page*/
+.card {
+    min-width: 100%;
+    margin-left: 0;
+    padding: 0;
+    
+}
+
+  .card-footer{
+    padding-bottom: 130px;
+}
+
+  .card-img-top{
+    height: 150px;
+}
+  .service-container{
+      margin-bottom: 50px;
+  }
+  
+  .register-div{
+      position: relative;
+      margin: auto;
+      left: 1.5%;
+
+  }
 /*Service detail page*/
 
 .image-container{
@@ -567,6 +633,8 @@ input[name='q']::placeholder {
     left: auto;
     text-align: center;
 }
+
+
 
 
 /*Checkout success page*/
