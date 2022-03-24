@@ -474,6 +474,15 @@ input[name='q']::placeholder {
 }
 
   
+@media (max-width: 768px) {
+    
+/*Checkout Success page*/
+
+.order-confirmation-wrapper{
+    left: 2%;
+}
+
+
 
 }
 
@@ -560,6 +569,11 @@ input[name='q']::placeholder {
 }
 
 
+/*Checkout success page*/
+
+.small-order-num{
+    font-size: smaller;
+}
 
 }
 
