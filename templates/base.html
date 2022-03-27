@@ -94,10 +94,11 @@
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-
-                            {% endif %}
                         </div>
                     </li>
+                            {% endif %}
+                        
+                    
                    </ul>
                     {% if request.user.is_authenticated %}
                     <i class="fas fa-shopping-cart fa-lg text-white "></i>
