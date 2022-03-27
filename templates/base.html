@@ -88,7 +88,7 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             My Account
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <div class="dropdown-menu border-0">
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_service' %}" class="dropdown-item">Product Management</a>
                             {% endif %}
@@ -98,7 +98,7 @@
                             {% endif %}
                         </div>
                     </li>
-
+                   </ul>
                     {% if request.user.is_authenticated %}
                     <i class="fas fa-shopping-cart fa-lg text-white "></i>
                     <li class="list-inline-item dropdown">
@@ -108,7 +108,7 @@
 
 
 
-                            <p class="text-white cart-price " id="navbarDropdownMenuLink">
+                            <p class="text-white cart-price ">
                                 {% if grand_total %}
                                 £{{ grand_total|floatformat:2 }}
                                 {% else %}
@@ -117,9 +117,10 @@
                             </p>
 
                         </a>
-                         {% endif %}
-                    </li>                   
-                </ul>
+                         
+                    </li>
+                    {% endif %}                   
+                
             </div>
         </nav>
     </header>
@@ -150,7 +151,7 @@
     {% endblock %}
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script >
         $('.toast').toast('show');
     </script>
     {% endblock %}
