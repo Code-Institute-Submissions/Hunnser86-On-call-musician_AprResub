@@ -55,12 +55,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <div></div>
                     <li class="nav-item active">
                         <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
                     </li>
 
-  
+
                     {% if request.user.is_authenticated %}
                     <li class="nav-item active">
                         <a class="nav-link" href="{% url 'services' %}">Services</a>
@@ -72,19 +71,19 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="{% url 'service_demo' %}">Services</a>
                     </li>
-                    <li class="nav-item active">                   
+                    <li class="nav-item active">
                         <a href="{% url 'account_signup' %}" class="nav-link">Register</a>
-                                   
+
                     </li>
                     <li class="nav-item active">
-                         <a href="{% url 'account_login' %}" class="nav-link">Login</a>
-                    </li>  
+                        <a href="{% url 'account_login' %}" class="nav-link">Login</a>
+                    </li>
                     {% endif %}
 
-                        {% if request.user.is_authenticated %}
-                        <i class="fas fa-user fa-lg text-white"></i>
-                        <li class="list-inline-item dropdown">
-                        
+                    {% if request.user.is_authenticated %}
+                    <i class="fas fa-user fa-lg text-white"></i>
+                    <li class="list-inline-item dropdown">
+
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             My Account
@@ -98,17 +97,17 @@
 
                             {% endif %}
                         </div>
-                        </li>
+                    </li>
 
                     {% if request.user.is_authenticated %}
                     <i class="fas fa-shopping-cart fa-lg text-white "></i>
                     <li class="list-inline-item dropdown">
-                        
+
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_cart' %}">
-                            
-                        
-                        
+
+
+
                             <p class="text-white cart-price " id="navbarDropdownMenuLink">
                                 {% if grand_total %}
                                 £{{ grand_total|floatformat:2 }}
@@ -116,13 +115,10 @@
                                 £0.00
                                 {% endif %}
                             </p>
-                        
-                    </a>
-                    </li>
-                    {% endif %}
 
-
-
+                        </a>
+                         {% endif %}
+                    </li>                   
                 </ul>
             </div>
         </nav>
