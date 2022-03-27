@@ -1,7 +1,9 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (render, redirect, reverse, HttpResponse,
+                              get_object_or_404)
 from django.contrib import messages
 
 from services.models import Service
+
 
 def view_cart(request):
     """ A view to render the cart page"""
@@ -36,7 +38,8 @@ def adjust_cart(request, item_id):
 
     if quantity > 0:
         cart[item_id] = quantity
-        messages.success(request, f'Updated {service.name} quantity to {cart[item_id]}')
+        messages.success
+        (request, f'Updated {service.name} quantity to {cart[item_id]}')
     else:
         cart.pop(item_id)
         messages.success(request, f'Removed {service.name} from your cart')

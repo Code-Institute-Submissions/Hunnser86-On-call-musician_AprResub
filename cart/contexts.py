@@ -3,6 +3,7 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from services.models import Service
 
+
 def cart_contents(request):
     """ A context processor for the cart items"""
     cart_items = []
@@ -28,7 +29,6 @@ def cart_contents(request):
         discount = 0
         discount_delta = 0
 
-
     grand_total = discount + total
 
     context = {
@@ -43,4 +43,3 @@ def cart_contents(request):
     }
 
     return context
-
