@@ -18,7 +18,7 @@ The live site can be viewed here - [The On Call Musician](https://on-call-musici
 
 GitHub repository can be viewed here - [Hunnser86/On-call-musician](https://github.com/Hunnser86/On-call-musician).
 
-![Site Mockup](media/site-mockup.png)
+![Site Mockup](/media/site-mockup.png)
 
 ## UX
 ### Strategy
@@ -127,8 +127,8 @@ I found a suitable colour palette using [Adobe Color Wheel](https://color.adobe.
 * A hero image fills the majority of the page when it first loads. I’ve used a hero image as I believe it sets the tone by giving a professional and modern feel.
 * A call-to-action button aimed at directing traffic towards the Services page is layered over this image.
 
-### Products, product pages and wishlist.
-* Products are shown as cards. I felt this was the best way to display this amount of information without overwhelming a user. 
+### Services, service pages and music library.
+* Services are shown as cards. I felt this was the best way to display this amount of information without overwhelming a user. 
 * Individual service pages show all the information the cards do, except it is laid out in a side by side fashion.
 
 ### The checkout process
@@ -148,7 +148,7 @@ I found a suitable colour palette using [Adobe Color Wheel](https://color.adobe.
 ### Profile
 * Every user is assigned a profile page on registration.
 * Order history will appear on this page. From here a user will be able to access any old order confirmation that was generated at the time of order by clicking the order number as it acts a link.
-* To speed up the checkout process for returning customers a default delivery address can be added via a form here. This will pre-populate the checkout form with the default address when buying goods.
+* To speed up the checkout process for returning customers a default billing address can be added via a form here. This will pre-populate the checkout form with the default address when buying goods.
 
 ### Adding, editing and removing
 * Only admin can add, edit and delete services.
@@ -157,11 +157,11 @@ I found a suitable colour palette using [Adobe Color Wheel](https://color.adobe.
 * Inputted data is validated so forms will only accept data how we’d like it. The better the data inputted into the database the better the end result will be when it’s displayed throughout the site.
 
 ### Features left to implement
-* I would like to implement an overlay on the service page, on the card image of the service a customer has already bought, just to stop them accidentally making a double purchase ( they can always but more than one on purpose of course ). 
+* I would like to implement an overlay on the service page, on the card image of the service a customer has already bought, just to stop them accidentally making a double purchase ( they can always but more than one on purpose of course ). I would also like to implement a music player for the library, instead of embedding code from another site, as this would then mean everything is taken care of and owned by the site owner. This would also include using Filefields in a "Song" model, musch like the services.
 
 ## Database
 
-![Database schema](readme-docs/screenshots/db-diagram.png)
+![Database schema](/media/database_schema.png)
 
 ## Technologies
 ### Languages:
