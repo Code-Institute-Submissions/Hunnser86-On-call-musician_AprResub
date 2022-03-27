@@ -18,7 +18,6 @@ def all_services(request):
     return render(request, 'services/services.html', context)
 
 
-
 def service_detail(request, service_id):
     """ A view to show individual services"""
 
@@ -45,10 +44,11 @@ def add_service(request):
             messages.success(request, 'Successfully added service!')
             return redirect(reverse('service_detail', args=[service.id]))
         else:
-            messages.error(request, 'Failed to add service. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add service.'
+                           'Please ensure the form is valid.')
     else:
         form = ServiceForm()
-        
+
     template = 'services/add_service.html'
     context = {
         'form': form,
@@ -72,7 +72,8 @@ def edit_service(request, service_id):
             messages.success(request, 'Successfully updated service!')
             return redirect(reverse('service_detail', args=[service.id]))
         else:
-            messages.error(request, 'Failed to update service. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update service.'
+                           'Please ensure the form is valid.')
     else:
         form = ServiceForm(instance=service)
         messages.info(request, f'You are editing {service.name}')

@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 from services.models import Service
 
+
 def service_demo(request):
     """ A view to show all services"""
 
