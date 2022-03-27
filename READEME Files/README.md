@@ -43,6 +43,7 @@ As a returning user I'd like:
 * To sign up and register for an account easily. 
 * To login and logout easily.
 * To receive email confirmation of registration and have the ability to recover forgotten passwords.
+* To login and logout easily.
 * A personalised user profile where I can see my order history and set my default billing information if desired.
 * The ability to browse and download songs from a music library.
 
