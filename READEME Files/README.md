@@ -186,20 +186,14 @@ I found a suitable colour palette using [Adobe Color Wheel](https://color.adobe.
 * [Gmail.](https://en.wikipedia.org/wiki/Gmail) I've hooked my deployed site up to Gmail's smtp server in order to send emails. 
 * [Font Awesome.](https://fontawesome.com/) Adds icons throughout the site to increase UX.
 * [Bootstrap.](https://getbootstrap.com/) Grid layout, responsive design and basic styling.
-* [Google fonts.](https://fonts.google.com/specimen/Rubik) Montserrat was imported and used throughout.
-* [Favicon.io.](https://favicon.io/) Created favicon's, which are visible in browser tabs and the bookmarks bar.
-* [Balsamiq.](https://balsamiq.com/) Programme used for drawing the wireframes.
+* [Google fonts.](https://fonts.google.com/specimen/Poppins) Poppins was imported and used throughout.
 * [RandomKeygen.](https://randomkeygen.com/) Secure password and keygen generator used for secret key.
-* [Am I responsive?](http://ami.responsivedesign.is/) Gives a visual representation of how the website looks on different devices. Also used to produce the mock-up shown above.
-* [Dbdiagram.io.](https://dbdiagram.io/home) Used to draw entity-relationship diagram above showing relationships within my database.
-* [TinyPNG.](https://tinypng.com/) Reduces file size of the image files used.
-* [AutoPrefixer.](https://autoprefixer.github.io/) Adds vendor prefixes to CSS code for use on additional browsers.
 * W3C [HTML](https://validator.w3.org/) & [CSS](https://jigsaw.w3.org/css-validator/) validators.
 * [JSHint.](https://jshint.com/) JavaScript validator.
 * [PEP8 online.](http://pep8online.com/) Checks python code meets PEP8 requirements.
 
 ## Testing
-Separate testing document can be found here - [testing documentation.](TESTING.md)
+Separate testing document can be found here - [testing documentation.](/READEME%20Files/TESTING.md)
 
 ## Deployment
 ### Heroku deployment
@@ -209,10 +203,7 @@ This project is hosted by Heroku but is still deployed from the master branch of
 3. Gave my app a name and selected the region from the dropdown menu that was closest geographically. 
 4. Clicked the **create app** button where I was directed to the dashboard for the new app.
 5. Clicked on the **resources** tab on the dashboard. Added Heroku Postgres to the app by searching and then selecting it. I then selected the Hobby Dev – Free plan.
-6. As I didn't use fixtures to populate my development database I now created three json files, which act as fixtures and will help transfer the data across to the Postgres database.
-    * `python3 manage.py dumpdata products.Category > categories.json`
-    * `python3 manage.py dumpdata products.Country > countries.json`
-    * `python3 manage.py dumpdata products.Product > products.json`
+6. I populated my database with a fixtures file containing one json file containing the services.
 7. Installed dj_database_url and psycopg2-binary using `pip3 install`.
 8. In `settings.py` I imported dj_database_url at the top of the file.
 9. Then replaced the default `DATABASE` setting with:
@@ -224,10 +215,8 @@ DATABASES = {
 The `<DATABASE_URL>` is found in the Heroku apps **Config Vars**. It's important that you don't commit this url into version control!
 
 10. I ran migrations using `python3 manage.py migrate` to create the models in the new database.
-11. I now used the json files created in step 6 to populate the new database. I loaded them in this order as the Product model depends on both the Country and Category models.
-    * `python3 manage.py loaddata categories.json`
-    * `python3 manage.py loaddata countries.json`
-    * `python3 manage.py loaddata products.json`
+11. I now used the json file in step 6 to populate the new database.
+    * `python3 manage.py loaddata services.json`
 12. Then I created a new superuser, this was done by using `python3 manage.py createsuperuser` and then following the instructions shown in the terminal.
 13. Installed gunicorn using `pip3 install`.
 14. Used `pip3 freeze > requirements.txt`, this stores all our apps requirements.
@@ -423,17 +412,6 @@ os.environ.setdefault(“STRIPE_WH_SECRET”, “<key from individual webhook>�
 ## Credits
 ### Code
 * I used the Boutique Ado e-commerce store project that is part of the course content as a guide as I built my site. Many of the apps, models and functionality’s have been taken from this walkthrough and adapted to suit my needs.
-* I watched the following video's about creating e-commerce stores on YouTube to enhance my knowledge after completing the Boutique Ado walkthrough:
-    * [Corey Schafer.](https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p)
-    * [Dennis Ivy.](https://www.youtube.com/watch?app=desktop&v=_ELCMngbM0E)
-* This [Stack Overflow post](https://stackoverflow.com/questions/43824382/custom-font-src-with-stripe/56985340) helped me integrate google fonts into Stripe in the stripe_elements.js file.
-* This [Stack Overflow post](https://stackoverflow.com/questions/51304169/how-to-put-the-number-at-top-right-corner-of-cart-icon) helped me with the code for the count badge found on the cart.
-* I followed these two articles by [Django Central](https://djangocentral.com/) and this video by [Codemy.com](https://www.youtube.com/watch?v=hZrlh4qU4eQ) when setting up my blog and comments section. I made changes where I saw fit to suit my requirements and also added to the code:
-    * [Blog.](https://djangocentral.com/building-a-blog-application-with-django/)
-    * [Blog comments.](https://djangocentral.com/creating-comments-system-with-django/)
-* I found out about the `linebreaksbr` functionality used in the blog posts [here.](https://docs.djangoproject.com/en/dev/ref/templates/builtins/#linebreaksbr)
-* I resolved an issue causing a 500 internal server error being made by the function in my products model that resizes images if required by reading this [Stack Overflow post.](https://stackoverflow.com/questions/18215989/resize-thumbnails-django-heroku-backend-doesnt-support-absolute-paths)
-* I made the wishlist view after following a walkthrough by [Very Academy.](https://www.youtube.com/watch?v=OgA0TTKAtqQ&t=2403s) I made changes where I saw fit to suit my requirements and also added to the code.
 * I used the following documentation throughout:
     * [Django docs.](https://docs.djangoproject.com/en/3.2/)
     * [Allauth docs.](https://django-allauth.readthedocs.io/en/latest/index.html)
@@ -442,16 +420,6 @@ os.environ.setdefault(“STRIPE_WH_SECRET”, “<key from individual webhook>�
     * [Crispy forms docs.](https://django-crispy-forms.readthedocs.io/en/latest/index.html)
 * [W3schools,](https://www.w3schools.com/) [Stack Overflow](https://stackoverflow.com/) & [MDN.](https://developer.mozilla.org/en-US/) For general coding problem solving.
 
-### Content
-* [Beerwulf](https://www.beerwulf.com/en-gb) was a big inspiration to this site.
-* Home / landing page hero image - [JuniperPhoton via Unsplash.](https://unsplash.com/photos/9i2YH9vyfWQ)
-* Oktoberfest 2022 image - [Marius Oppel via Unsplash.](https://unsplash.com/photos/E53rbNwqEMI)
-* Duvel blog post image - [Ferment blog article.](https://www.beer52.com/ferment/article/1053/duvel-moortgat)
-* No product image - [freesvg.org.](https://freesvg.org/vector-graphics-of-bottle-of-beer)
-* The product descriptions were taken from the brewers websites.
-* The blog posts were taken from the following and edited accordingly to suit:
-    * [Oktoberfest 2020.](https://www.oktoberfesttours.travel/oktoberfest-2022/)
-    * [Duvel wins gold!](https://www.duvel.com/en-gb/news/duvel-wins-gold-at-brussels-beer-challenge-2018)
 
 ### Acknowledgements
 * My mentor Brian Macharia for all the feedback and aiding in the planning and execution of this site.
