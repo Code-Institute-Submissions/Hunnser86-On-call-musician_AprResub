@@ -46,13 +46,6 @@ class Order(models.Model):
         """
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))
         ['lineitem_total__sum'] or 0
-        if self.order_total < settings.TEN_PERCENT_DISCOUNT:
-            self.discount = (self.order_total *
-                             settings.SINGLE_PRODUCT_COUNT / 100)
-        else:
-            self.discount = 0
-        self.grand_total = self.order_total + self.discount
-        self.save()
 
     def save(self, *args, **kwargs):
         """
