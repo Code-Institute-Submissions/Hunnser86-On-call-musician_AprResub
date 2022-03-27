@@ -155,7 +155,7 @@ h4{
     background: rgb(1, 9, 82);
 }
 
-/*service demo page*/
+
 
 
 
@@ -367,7 +367,7 @@ input[name='q']::placeholder {
       }
 
     .fa-shopping-cart{
-                display: flex;
+        display: flex;
         align-items: center;
         justify-content: center;
     }
@@ -514,35 +514,6 @@ input[name='q']::placeholder {
 
 }
 
-
-@media (min-width: 375px){
-    /* service-demo page*/
-/*.card {
-    min-width: 100%;
-    margin-left: 0;
-    padding: 0;
-    
-}
-
-  .card-footer{
-    padding-bottom: 130px;
-}
-
-  .card-img-top{
-    height: 150px;
-}
-  .service-container{
-      margin-bottom: 50px;
-  }
-  
-  .register-div{
-      position: relative;
-      margin: auto;
-      left: -10%;
-      
-
-  }*/
-}
 
 /*on small screens*/
 
@@ -694,10 +665,11 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
+    background-color: rgb(83, 83, 83);
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
+}
 }

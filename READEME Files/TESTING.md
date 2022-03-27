@@ -10,7 +10,6 @@ The live site can be viewed here - [The Hop Shop](https://hop-shop.herokuapp.com
 All my code has been put through the following:
 
 * W3C HTML validation.
-* CSS AutoPrefixer.
 * W3C CSS validation.
 * JSHint JavaScript validation.
 * PEP8 online check.
