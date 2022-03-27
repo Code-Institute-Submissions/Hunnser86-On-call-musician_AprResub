@@ -147,7 +147,7 @@ h4{
 }
 
 .card-img-top{
-    height: 300px;
+    min-height: 23em;
 }
 
 
@@ -382,12 +382,10 @@ input[name='q']::placeholder {
 }
 
   .card-footer{
-    padding-bottom: 130px;
+    padding-bottom: 50px;
 }
 
-  .card-img-top{
-    height: 15em;
-}
+
   .service-container{
       margin-bottom: 50px;
   }
@@ -455,17 +453,18 @@ input[name='q']::placeholder {
 }
 
   .card-img-top{
-    height: 15em;
+    min-height: 10em;
 }
   .service-container{
       margin-bottom: 50px;
   }
 
-/*service demo page*/
-
-
 
   /*Service detail page*/
+
+.navbar{
+    z-index: 2;
+}
 
 .image-container{
     position: absolute;

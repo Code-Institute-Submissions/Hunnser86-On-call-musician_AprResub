@@ -96,32 +96,28 @@
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                         </div>
                     </li>
+                    {% endif %}
+                {% if request.user.is_authenticated %}
+                <i class="fas fa-shopping-cart fa-lg text-white "></i>
+                <li class="list-inline-item dropdown">
+
+                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                        href="{% url 'view_cart' %}">
+                        <p class="text-white cart-price ">
+                            {% if grand_total %}
+                            £{{ grand_total|floatformat:2 }}
+                            {% else %}
+                            £0.00
                             {% endif %}
-                        
-                    
-                   </ul>
-                    {% if request.user.is_authenticated %}
-                    <i class="fas fa-shopping-cart fa-lg text-white "></i>
-                    <li class="list-inline-item dropdown">
+                        </p>
+                    </a>
 
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-                            href="{% url 'view_cart' %}">
+                </li>
+                {% endif %}
+
+                </ul>
 
 
-
-                            <p class="text-white cart-price ">
-                                {% if grand_total %}
-                                £{{ grand_total|floatformat:2 }}
-                                {% else %}
-                                £0.00
-                                {% endif %}
-                            </p>
-
-                        </a>
-                         
-                    </li>
-                    {% endif %}                   
-                
             </div>
         </nav>
     </header>
@@ -152,7 +148,7 @@
     {% endblock %}
 
     {% block postloadjs %}
-    <script >
+    <script>
         $('.toast').toast('show');
     </script>
     {% endblock %}
