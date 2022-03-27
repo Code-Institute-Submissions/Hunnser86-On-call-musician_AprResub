@@ -153,7 +153,8 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+                'UserAttributeSimilarityValidator',
     },
     {
         'NAME':
@@ -222,9 +223,20 @@ if 'USE_AWS' in os.environ:
 TEN_PERCENT_DISCOUNT = 2
 SINGLE_PRODUCT_COUNT = 1
 STRIPE_CURRENCY = 'gbp'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51KUSs3AjgjlLwv5fbdqUxMRmbfIXzTSEJIK4P1LpPmZQTQF84ZGdHvDWUsj6PT5jTvMjnc3tT7UE1ExxdIP6jpdy006PmBTmEm')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51KUSs3AjgjlLwv5fDjtgfvBFUnaSOCnMBbOzOlZOhUZnBSiil3by051RPNXhggVaIwXPp7nxOUDENDlppcVeQR9j00KmMgLJAf')
-STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', 'sk_test_51KUSs3AjgjlLwv5fDjtgfvBFUnaSOCnMBbOzOlZOhUZnBSiil3by051RPNXhggVaIwXPp7nxOUDENDlppcVeQR9j00KmMgLJAf')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY',
+                              'pk_test_51KUSs3AjgjlLwv5fbdqUxMRmbfIXzTSEJ'
+                              'IK4P1LpPmZQTQF84ZGdHvDWUsj6PT5jTvM'
+                              'jnc3tT7UE1ExxdIP6jpdy006PmBTmEm')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY',
+                              'sk_test_51KUSs3AjgjlLwv5fDjtg'
+                              'fvBFUnaSOCnMBbOzOlZOhUZnBSiil3'
+                              'by051RPNXhggVaIwXPp7nxOUDENDl'
+                              'ppcVeQR9j00KmMgLJAf')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET',
+                             'sk_test_51KUSs3AjgjlLwv5fDjtg'
+                             'fvBFUnaSOCnMBbOzOlZOhUZnBSiil'
+                             '3by051RPNXhggVaIwXPp7nxOUDENDl'
+                             'ppcVeQR9j00KmMgLJAf')
 DEFAULT_FROM_EMAIL = 'oncallmusician@example.com'
 
 
