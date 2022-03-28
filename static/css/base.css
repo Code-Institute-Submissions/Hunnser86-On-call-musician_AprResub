@@ -235,6 +235,15 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+/*Shopping Cart*/
+
+.checkout-buttons{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+}
+
+
 /*----------------------------------checkout success*/
 .order-confirmation-wrapper{
     position: relative;
@@ -483,6 +492,8 @@ input[name='q']::placeholder {
   
 @media (max-width: 768px) {
     
+
+
 /*Checkout Success page*/
 
 .order-confirmation-wrapper{
@@ -509,8 +520,22 @@ input[name='q']::placeholder {
     text-align: center;
 }
 
- 
+    /*Shopping Cart*/
 
+.checkout-buttons{
+   position: relative;
+   margin-left: 3em;
+} 
+
+}
+
+@media (max-width: 375px){
+        /*Shopping Cart*/
+
+.checkout-buttons{
+    position: relative;
+    margin-left: 1em;
+ } 
 }
 
 
@@ -604,7 +629,16 @@ input[name='q']::placeholder {
     text-align: center;
 }
 
+/*Shopping Cart*/
 
+.btn-outline-blue{
+    margin-bottom: 10px;
+    margin-left: 50px;
+ } 
+
+ .btn-blue{
+     margin-left: 38px;
+ }
 
 
 /*Checkout success page*/

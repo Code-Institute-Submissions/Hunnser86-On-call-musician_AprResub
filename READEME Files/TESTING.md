@@ -259,16 +259,16 @@ I have physically tested my website on the following browsers and devices:
 * When the forgot password link is clicked the user is asked to enter an email address and if it matches one that’s associated with a user in the database then they are sent a reset link to create a new password.
     * Django allauth handles all this really well and in a very user friendly manner.
 **"To login and logout easily."**
-* The link to login can be found in the navigation bar by clicking the profile link / icon and selecting it from the dropdown menu.
+* The link to login can be found in the navigation bar.
 * The logging in process is just as simple as registering with only a username or email address being required along with a password.
     * Each input field is clearly labelled.
     * When successfully logged in a success toast will appear welcoming the user.
 * A user is clearly informed if the details provided don’t match.
-* To log out the logout link needs to be clicked. This can be found in the navigation bar by clicking the profile link / icon and selecting it from the dropdown menu.
-![Login page.](readme-docs/screenshots/user-stories-screenshot8.jpg)
+* To log out the logout link needs to be clicked. This can be found in the navigation bar as well.
+
 **"A personalised user profile where I can see my order history and set my default delivery information if desired."**
 * The link that a user can use to access their profile can be found in the navigation bar by clicking the profile link / icon and selecting it from the dropdown menu. This page is only accessible to them and only when they’re signed in.
-* The page is personalised by including their username in the title.
+* The page is personalised and shows past orders.
 * A list of all previous orders made by that user is shown. The list gives information such as the date the order was made, its order number and the order total in a clear manner.
     * The order number here also acts as a link to the order confirmation that would have been generated at the time relaying delivery, order and billing details.
     * To stop confusion a toast message appears telling the user that this was a past order.
