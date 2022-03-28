@@ -272,44 +272,22 @@ I have physically tested my website on the following browsers and devices:
 * A list of all previous orders made by that user is shown. The list gives information such as the date the order was made, its order number and the order total in a clear manner.
     * The order number here also acts as a link to the order confirmation that would have been generated at the time relaying delivery, order and billing details.
     * To stop confusion a toast message appears telling the user that this was a past order.
-* Saved delivery information can be inputted or is shown via a form on the page.
-    * Any information inputted and updated here overrides the users default delivery information where it is used in instances such as when checking out.
+* Saved billing information can be inputted or is shown via a form on the page.
+    * Any information inputted and updated here overrides the users default billing information where it is used in instances such as when checking out.
     * The information shown here can get overridden as part of the checkout process if the user selects to save their information via the checkbox.
-![Example of a profile page.](readme-docs/screenshots/user-stories-screenshot9.jpg)
-**"Access to a wishlist where favourites can be added / removed so I can easily purchase them at a later date."**
-* The wishlist feature can only be used by registered users and is unique just to them.
-* When logged in every product image has a heart displayed in the top right corner and this is how the item gets added and removed (toggled) from the list.
-    * A heart outline indicates the item isn’t on the list. Clicking this adds it to the list and turns the heart solid indicating it now on the list.
-    * A solid heart indicates the item is on the list. Clicking this removes it from the list and turns the heart back to an outline indicating it’s no longer on the list.
-* All results are displayed on the wishlist page, which is accessed via the heart icon found in the navigation bar. This is a direct link to the wishlist and as mentioned before the link is always available as the navigation bar is fixed.
-* The wishlist contents are shown as cards as is the case throughout the site meaning that the product can be added to the cart from here.
-**"To read beer related articles as I’m a regular consumer of beer and I’d find a blog interesting."**
-* Added a blog to the site where beer related articles and posts can be made. This adds additional purpose to the site making it not just a shop.
-* Each article is previewed on its own card and can be clicked upon to open the article to read.
-* From a business point these posts can be structured to promote events, certain products and form an online community.
-![Blog post.](readme-docs/screenshots/user-stories-screenshot10.jpg)
-**"The ability to comment and interact with other users on the blog posts."**
-* At the bottom of every blog article there is a comments section where registered users can post questions, thoughts and opinions on the article.
-* Comments made on the article are available for all to see.
-* The functionality to comment is only available to registered users though. Unregistered users are provided with links to register or sign in here to encourage them to do so.
-* A toast message will appear to confirm if the comment has been posted or not.
-* All comments are restricted to 500 characters to stop spam and essay’s being posted.
+**"Access to a music when registered."**
+* when a user has registered, they will have access to a library of music.  The link will appear in the navbar.
 ### As the site owner / admin I want:
-**"The ability to add new products to the store."**
-**"The ability to create and post new articles to the blog."**
-* Adding either a new product or blog post is done via a form.
-* The links to access both forms are shown in the navigation bar by clicking the profile link / icon and selecting them from the dropdown menu.
-    * These links are only visible to admin.
-    * The pages are only accessible by admin.
+**"The ability to add new services to the store."**
+* Adding either a new service is done via a form.
+* The links to access the form is shown in the navigation bar by clicking the profile link / icon and selecting it from the dropdown menu.
+    * These link is only visible to admin.
 * Each input field is clearly labelled and includes a placeholder. If the validation requirements aren’t met then the user is informed of this on submission.
 * On successful completion we get sent to the newly created page and the product/article can be viewed on the site.
 **"To be able to edit and remove products from the store."**
-**"To be able to edit and remove existing posts from the blog."**
-* As with adding products and blog posts, editing and removing them can only be done by admin with access to the relevant forms and functionality restricted.
-* To access the edit and delete function of a product, admin needs to navigate to the product detail page of the item and the relevant call-to-action buttons will be shown under the table as shown below.
-* To access the edit and delete function of a blog post, admin needs to navigate to the blog post in question and the edit and delete buttons will be shown underneath the article.
-* Editing either will take you to the relevant form, which will be pre-populated with the data that’s already been inputted.
+* As with adding services, editing and removing them can only be done by admin with access to the relevant form and functionality restricted.
+* To access the edit and delete function of a product, admin needs to navigate to the service page and the relevant link will be shown.
+* Editing will take you to the relevant form, which will be pre-populated with the data that’s already been inputted.
     * Form fields are clearly labelled and all data entered is validated the same as when it’s intially added.
-* Deleting anything from the site is a two-step process where confirmation is needed in order to avoid any accidents.
+* Deleting anything from the site is as simple as clicking the delete link in the services page.
     * Any deletion or update is confirmed by a toast message.
-![Edit and delete a product buttons.](readme-docs/screenshots/user-stories-screenshot11.jpg)
