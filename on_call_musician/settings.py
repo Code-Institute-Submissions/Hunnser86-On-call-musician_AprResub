@@ -137,7 +137,7 @@ WSGI_APPLICATION = 'on_call_musician.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        
     }
 else:
     DATABASES = {
@@ -146,6 +146,7 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+
 
 
 # Password validation
