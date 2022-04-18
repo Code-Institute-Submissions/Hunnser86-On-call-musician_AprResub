@@ -21,141 +21,14 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        {% for music in Music %}
-            <div class="col-sm-6 col-md-6 col-lg-4">
-              <div class="card h-100 border-0"> 
-             <div class="col-md-4">
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1231468912%3Fsecret_token%3Ds-2XWpvVsch4U&color=%23010952&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/user-487692967" title="Rob Hunns Music" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Rob Hunns Music</a> · <a
-                    href="https://soundcloud.com/user-487692967/fast-computer-music/s-2XWpvVsch4U"
-                    title="Fast computer music" target="_blank" style="color: #cccccc; text-decoration: none;">Fast
-                    computer music</a>
-            </div>
-        </div>
-                  <div class="card-body pb-0">
-                      <p class="mb-0">{{ music.name }}</p>
-                  </div>
-                  <div class="card-body pb-0">
-                      <p class="mb-0">{{ music.description }}</p>
-                  </div>
-                  <div class="card-footer pt-0 border-0 text-left">
-                      <div class="row">
-                          <div class="col card-body">
-                              <br>
-                              {% if music.rating %}
-                                  <p>Rating</p>
-                                  <small class=""><i class="fas fa-star mr-1"></i>{{ music.rating }} / 5</small>
-                              {% else %}
-                                  <small class="">No Rating</small>
-                              {% endif %}
-                      </div>
-                  </div>
-              </div>
-            </div>
-
-            {% if forloop.counter|divisibleby:1 %}
-            <div class="col-12 d-sm-none mb-5">
-                <hr class="w-50 mb-1 h-rule">
-            </div>
-        {% endif %}                        
-        {% if forloop.counter|divisibleby:2 %}
-            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                <hr class="w-50 mb-1 h-rule">
-            </div>
-        {% endif %}
-        {% if forloop.counter|divisibleby:3 %}
-            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                <hr class="w-50 mb-1 h-rule">
-            </div>
-        {% endif %}
-        {% if forloop.counter|divisibleby:4 %}
-            <div class="col-12 d-none d-xl-block mb-5">
-                <hr class="w-50 mb-1 h-rule">
-            </div>
-        {% endif %}
-        {% endfor %}
-    <div class="row">
-
-<!--...      <div class="col-md-4">
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1231468396%3Fsecret_token%3Ds-Nl9Ctgkg3mw&color=%23010952&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/user-487692967" title="Rob Hunns Music" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Rob Hunns Music</a> · <a
-                    href="https://soundcloud.com/user-487692967/ambient/s-Nl9Ctgkg3mw" title="Ambient" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Ambient</a>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1231466761%3Fsecret_token%3Ds-4WMi7OKy01S&color=%23010952&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/user-487692967" title="Rob Hunns Music" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Rob Hunns Music</a> · <a
-                    href="https://soundcloud.com/user-487692967/new-tech/s-4WMi7OKy01S" title="New Tech" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">New Tech</a>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1231466014%3Fsecret_token%3Ds-FXWVgVNTlSW&color=%23010952&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/user-487692967" title="Rob Hunns Music" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Rob Hunns Music</a> · <a
-                    href="https://soundcloud.com/user-487692967/lofi-syntwave/s-FXWVgVNTlSW" title="Lofi Syntwave"
-                    target="_blank" style="color: #cccccc; text-decoration: none;">Lofi Syntwave</a>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1228175752%3Fsecret_token%3Ds-XHYOPnCYCVL&color=%23010952&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/user-487692967" title="Rob Hunns Music" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Rob Hunns Music</a> · <a
-                    href="https://soundcloud.com/user-487692967/chilled-out-pads-glitch-style/s-XHYOPnCYCVL"
-                    title="Chilled out pads glitch style promo" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Chilled out pads glitch style promo</a>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1228174429%3Fsecret_token%3Ds-k4xinQkPE1o&color=%23010952&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/user-487692967" title="Rob Hunns Music" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Rob Hunns Music</a> · <a
-                    href="https://soundcloud.com/user-487692967/chilled-out-pads-house-style-promo/s-k4xinQkPE1o"
-                    title="Chilled out pads House style promo" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Chilled out pads House style promo</a>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1231468663%3Fsecret_token%3Ds-WhgkRgn4Zh7&color=%23010952&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/user-487692967" title="Rob Hunns Music" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Rob Hunns Music</a> · <a
-                    href="https://soundcloud.com/user-487692967/synth-ballad/s-WhgkRgn4Zh7" title="Synth ballad"
-                    target="_blank" style="color: #cccccc; text-decoration: none;">Synth ballad</a>
-            </div>
+        <div class="col">
+            {{ music }}
         </div>
     </div>
 </div>
---> 
+
+
 
 {% endblock %}
