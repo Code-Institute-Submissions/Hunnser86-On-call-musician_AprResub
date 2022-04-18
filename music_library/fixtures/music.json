@@ -1,0 +1,51 @@
+[
+    {
+       "model": "music_library.Music",
+       "fields":{
+       "name": "Fast Computer Music",
+       "description": "A fast 8bit style song suited for anything gaming related ",
+       "rating": 3.5
+        }
+    },
+    {
+       "model": "music_library.Music",
+       "fields":{
+       "name": "Ambient",
+       "description": "An ambient song suited for relaxing videos ",
+       "rating": 4.9
+        }
+    },
+    {
+       "model": "music_library.Music",
+       "fields":{
+       "name": "Lofi Synthwave",
+       "description": "A lofi synthwave tune suited for background/soundtrack music ",
+       "rating": 3.5
+        }
+    },
+    {
+       "model": "music_library.Music",
+       "fields":{
+       "name": "Chilled Out Pads Glitch",
+       "description": "A glitchy style tune suited for horror or suspense ",
+       "rating": 5.0
+        }
+    },
+    {
+       "model": "music_library.Music",
+       "fields":{
+       "name": "Chilled Out Pads House",
+       "description": "A house style song suited for theme or bedding music ",
+       "rating": 4.0
+        }
+    },
+    {
+       "model": "music_library.Music",
+       "fields":{
+       "name": "Synth Ballad",
+       "description": "An 80s style synth ballad suited to love stories ",
+       "rating": 5.0
+        }
+    }
+
+]
