@@ -5,6 +5,7 @@ from .models import Music
 class MusicAdmin(admin.ModelAdmin):
     list_display = (
         'name',
+        'iframe',
         'description',
         'rating'
     )

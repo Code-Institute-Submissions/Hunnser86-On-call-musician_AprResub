@@ -28,22 +28,13 @@
             <div class="row">
                 {% for music in music %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                    {% if music.image %}
-                    <a href="{{ song_url }}">
-                        <img class="card-img-top img-fluid" src="{{ music.image }}" alt="{{ music.name }}">
-                    </a>
-                    {% else %}
-                    <a href="{{ song_url }}">
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ music.name }}">
-                    </a>
-                    {% endif %}
-                    </div>
+                    {% autoescape off %}
+                    {{ music.iframe }}
+                    {% endautoescape %}
                     <div class="card-body pb-0">
                        <p>{{ music.name }}</p>
-                       <p class="mb-0 text-left font-weight-bold">{{ music.description }}.</p>
-                       <br>
-                       <small>{{ music.rating }} / 5</small>
-
+                       <p class="mb-0 text-left font-weight-bold">{{ music.description }}</p>
+                       <small>{{ music.rating }} / 5</small> 
                     </div>
  
                 </div>
