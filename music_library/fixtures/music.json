@@ -1,0 +1,73 @@
+[
+    {
+       "model": "music_library.Music",
+       "fields":{
+       "name": "Fast Computer Music",
+       "description": "A fast paced 8bit computer style song",
+       "url": "https://soundcloud.com/user-487692967/fast-computer-music",
+       "image_url": "https://images.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+       "image": "fast_computer_music.jpg"
+        }
+    },
+    {
+        "model": "music_library.Music",
+        "fields":{
+        "name": "Ambient",
+        "description": "An ambient style song ",
+        "url": "https://soundcloud.com/user-487692967/ambient",
+        "image_url": "https://images.pexels.com/photos/9993592/pexels-photo-9993592.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "image": "ambient.jpg"
+         }
+     },
+     {
+        "model": "music_library.Music",
+        "fields":{
+        "name": "New Tech",
+        "description": "A Tech House style song",
+        "url": "https://soundcloud.com/user-487692967/new-tech",
+        "image_url": "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "image": "new_tech.jpg"
+         }
+     },
+     {
+        "model": "music_library.Music",
+        "fields":{
+        "name": "Lofi Synthwave",
+        "description": "A lofi synthwave tune",
+        "url": "https://soundcloud.com/user-487692967/lofi-syntwave",
+        "image_url": "https://images.pexels.com/photos/3672355/pexels-photo-3672355.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "image": "lofi_synthwave.jpg"
+         }
+     },
+     {
+        "model": "music_library.Music",
+        "fields":{
+        "name": "Glitch",
+        "description": "A glitchy house style tune",
+        "url": "https://soundcloud.com/user-487692967/chilled-out-pads-glitch-style",
+        "image_url": "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "image": "glitch.jpg"
+         }
+     },
+     {
+        "model": "music_library.Music",
+        "fields":{
+        "name": "Synth Ballad",
+        "description": "An 80s style synth ballad",
+        "url": "https://soundcloud.com/user-487692967/synth-ballad",
+        "image_url": "https://images.pexels.com/photos/3391932/pexels-photo-3391932.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "image": "80_synth_ballad.jpg"
+         }
+     },
+     {
+        "model": "music_library.Music",
+        "fields":{
+        "name": "House Music",
+        "description": "A house style song",
+        "url": "https://soundcloud.com/user-487692967/chilled-out-pads-house-style-promo",
+        "image_url": "https://images.pexels.com/photos/2381596/pexels-photo-2381596.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "image": "house_music.jpg"
+         }
+     }
+
+]
