@@ -5,9 +5,13 @@ from django.db import models
 
 
 class Music(models.Model):
+
     """
-    A class to return the correct information to the frontend.
+    A meta class to change the verbose name/plural name
     """
+    class Meta:
+        verbose_name_plural = 'Music'
+
     name = models.CharField(max_length=254)
     description = models.TextField(max_length=400)
     url = models.URLField(max_length=1024, null=True, blank=True)
