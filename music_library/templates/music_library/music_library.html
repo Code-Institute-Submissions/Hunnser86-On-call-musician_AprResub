@@ -23,10 +23,36 @@
 
 <div class="row">
     <div class="music-container col-10 offset-1">
-          <div class="row mt-1 mb-2"></div>
-          <div class="row">
-              {{ music }}
-          </div>
+        <div class="row mt-1 mb-2"></div>
+        <div class="row">
+            {% for music in music %}
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    {% if music.image %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="{{ music.img.url }}" alt="{{ music.name }}">
+                    </a>
+                    {% else %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ music.name }}">
+                    </a>
+                    {% endif %}
+                    <div class="card-body pb-0">
+                        <p class="mb-0">{{ music.name }}</p> <br>
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-0">{{ music.description }}</p> <br>
+                                <a href="{{ music.url }}" target="_blank">
+                                    <p class="mb-0 text-warning">Download here</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
 

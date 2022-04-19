@@ -345,6 +345,13 @@ input[name='q']::placeholder {
 }
 
 
+/* Music Library */
+
+.card{
+   margin-bottom: 2em;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
